@@ -75,7 +75,7 @@ class App extends React.Component {
                 backgroundColor: '#0B1A61'
               }}
               variant="contained"
-              href="/BasePag"
+              href="/basepag"
             >
               Inicio
             </Button>
@@ -85,12 +85,12 @@ class App extends React.Component {
 
 
         <Routes>
-          <Route exact path="/BasePag" element={<BasePag />} />
-          <Route exact path="/FormulariosFi" element={<Formulariosfinalizados />} />
-          <Route exact path="/VisualizarR" element={<VisualizarRespuestas />} />
-          <Route exact path="/FormAct" element={<FormularioActivo />} />
-          <Route exact path="/Eliminar" element={<EliminarFormulario />} />
-          <Route exact path="/Crear" element={<Crear />} />
+          <Route exact path="/basepag" element={<BasePag />} />
+          <Route exact path="/formulariosfi" element={<Formulariosfinalizados />} />
+          <Route exact path="/visualizarr" element={<VisualizarRespuestas />} />
+          <Route exact path="/formact" element={<FormularioActivo />} />
+          <Route exact path="/eliminar" element={<EliminarFormulario />} />
+          <Route exact path="/crear" element={<Crear />} />
           <Route exact path="/borrador" element={<Borrador />} />
           <Route exact path="/alumno" element={<Alumno />} />
         </Routes>
