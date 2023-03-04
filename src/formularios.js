@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import BasePag from './componentes/BasePag';
 import Formulariosfinalizados from './componentes/FormulariosF';
 import VisualizarRespuestas from './componentes/VisualizarRes';
@@ -83,6 +83,8 @@ class App extends React.Component {
           <div className="magin-donw"></div>
         </div>
 
+        <BrowserRouter>
+            <div className="App">
         <Routes>
           <Route exact path="basepag" element={<BasePag />} />
           <Route exact path="formulariosfi" element={<Formulariosfinalizados />} />
@@ -93,6 +95,8 @@ class App extends React.Component {
           <Route exact path="borrador" element={<Borrador />} />
           <Route exact path="alumno" element={<Alumno />} />
         </Routes>
+        </div>
+        </BrowserRouter>;
 
       </>
     );
