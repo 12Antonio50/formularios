@@ -146,3 +146,4 @@ class Alumno extends React.Component {
         );
     }
 }
+export default Alumno;
