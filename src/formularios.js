@@ -86,14 +86,14 @@ class App extends React.Component {
         <BrowserRouter>
             <div className="App">
         <Routes>
-          <Route exact path="basepag" element={<BasePag />} />
-          <Route exact path="formulariosfi" element={<Formulariosfinalizados />} />
-          <Route exact path="visualizarr" element={<VisualizarRespuestas />} />
-          <Route exact path="formact" element={<FormularioActivo />} />
-          <Route exact path="eliminar" element={<EliminarFormulario />} />
-          <Route exact path="crear" element={<Crear />} />
-          <Route exact path="borrador" element={<Borrador />} />
-          <Route exact path="alumno" element={<Alumno />} />
+          <Route exact path="/basepag" element={<BasePag />} />
+          <Route exact path="/formulariosfi" element={<Formulariosfinalizados />} />
+          <Route exact path="/visualizarr" element={<VisualizarRespuestas />} />
+          <Route exact path="/formact" element={<FormularioActivo />} />
+          <Route exact path="/eliminar" element={<EliminarFormulario />} />
+          <Route exact path="/crear" element={<Crear />} />
+          <Route exact path="/borrador" element={<Borrador />} />
+          <Route exact path="/alumno" element={<Alumno />} />
         </Routes>
         </div>
         </BrowserRouter>;
