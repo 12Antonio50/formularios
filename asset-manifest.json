@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/formularios/static/css/main.67ad4241.css",
-    "main.js": "/formularios/static/js/main.228117dc.js",
+    "main.js": "/formularios/static/js/main.acba4bab.js",
     "static/js/787.2467fd4e.chunk.js": "/formularios/static/js/787.2467fd4e.chunk.js",
     "index.html": "/formularios/index.html",
     "main.67ad4241.css.map": "/formularios/static/css/main.67ad4241.css.map",
-    "main.228117dc.js.map": "/formularios/static/js/main.228117dc.js.map",
+    "main.acba4bab.js.map": "/formularios/static/js/main.acba4bab.js.map",
     "787.2467fd4e.chunk.js.map": "/formularios/static/js/787.2467fd4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.67ad4241.css",
-    "static/js/main.228117dc.js"
+    "static/js/main.acba4bab.js"
   ]
 }
