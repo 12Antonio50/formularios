@@ -2,6 +2,7 @@
   "name": "inscripcion",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://12Antonio50.github.io/formularios",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@emotion/react": "^11.10.6",
@@ -64,7 +65,10 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -139,5 +143,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

@@ -94,7 +94,7 @@ const EliminarFormulario = () => {
             </Button>
 
         </>
-    )
+    );
 }
 
 export default EliminarFormulario;

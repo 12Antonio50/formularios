@@ -15,8 +15,8 @@ function App() {
   return (
 
     <Routes>
-     <Route path="/" element={<BasePag />} />
-     <Route path="/BasePag" element={<Login />} />
+     <Route path="/" element={<Login />} />
+     <Route path="/BasePag" element={<BasePag />} />
      <Route path="/FormulariosFi" element={<Formulariosfinalizados />} />
      <Route path="/VisualizarR" element={<VisualizarRespuestas />} />
      <Route path="/FormAct" element={<FormularioActivo />} />
