@@ -16,7 +16,7 @@ function Login() {
                 <div className="box">
                     <div className="office">
                         <p>Iniciar sesión con Office 365</p>
-                        <button className="button-365" onClick="login()">Iniciar sesión</button>
+                        <button className="button-365" >Iniciar sesión</button>
                     </div>
                     
                 </div>
@@ -35,6 +35,23 @@ function Login() {
                 href="/alumno"
             >
                 Alumno
+            </Button>
+
+            <Button
+                style={{
+                    textAlign: "center",
+                    position: 'absolute',
+                    left: '90%',
+                    top: '90%',
+                    transform: 'translate(-50%, -50%)',
+                    width: '150px',
+                    height: '40px',
+                    backgroundColor: '#0B1A61'
+                }}
+                variant="contained"
+                href="/BasePag"
+            >
+                Inicio
             </Button>
             </div>
             <div className="magin-donw"></div>
