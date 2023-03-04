@@ -1,6 +1,5 @@
 import React from "react";
 import '../css/style.css'
-import logo from '../img/utc.png';
 import Boton from './Boton';
 import Box from '@mui/material/Box';
 import Radio from '@mui/material/Radio';
@@ -34,12 +33,19 @@ export default function Crear() {
     };
     return (
         <>
-            <div className="magin-up">
-                <div className="box-white">
-                    <img className="logo-utc" src={logo} alt='for sell'></img>
-                </div>
-                <div className="magin-donw"></div>
-            </div>
+            <Box
+                sx={{
+                    textAlign: "center",
+                    position: 'absolute',
+                    left: '50%',
+                    top: '59%',
+                    transform: 'translate(-50%, -50%)',
+                    width: 1000,
+                    height: 500,
+                    backgroundColor: '#0B1A61',
+
+                }}
+            />
             <div className="text-1"
                 style={{
                     fontsize: '50px',
@@ -61,7 +67,7 @@ export default function Crear() {
                     backgroundColor: '#0B1A61'
                 }}
                 variant="contained"
-                href="/"
+                href="/BasePag"
             >
                 Regresar
             </Button>

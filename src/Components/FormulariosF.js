@@ -1,6 +1,5 @@
 import React from "react";
 import '../css/style.css'
-import logo from '../img/utc.png';
 import Box from '@mui/material/Box';
 import { Button } from '@mui/material'
 import Boton from './Boton'
@@ -8,12 +7,7 @@ import Boton from './Boton'
 const FormulariosF = () => {
     return (
         <>
-            <div className="magin-up">
-                <div className="box-white">
-                    <img className="logo-utc" src={logo} alt='for sell'></img>
-                </div>
-                <div className="magin-donw"></div>
-            </div>
+            
             <div className="text-1"
                 style={{
                     left: '50%',
@@ -92,7 +86,7 @@ const FormulariosF = () => {
                     backgroundColor: '#0B1A61'
                 }}
                 variant="contained"
-                href="/"
+                href="/BasePag"
             >
                 Regresar
             </Button>

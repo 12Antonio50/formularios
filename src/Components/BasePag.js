@@ -1,6 +1,5 @@
 import React from "react";
 import '../css/style.css'
-import logo from '../img/utc.png';
 import Box from '@mui/material/Box';
 
 import { Button } from '@mui/material'
@@ -9,12 +8,7 @@ import { Button } from '@mui/material'
 const BasePag = () => {
     return (
         <>
-            <div className="magin-up">
-                <div className="box-white">
-                    <img className="logo-utc" src={logo} alt='for sell'></img>
-                </div>
-                <div className="magin-donw"></div>
-            </div>
+            
             <div className="text-1"
                 style={{
                     textAlign: "center",
@@ -45,7 +39,7 @@ const BasePag = () => {
                     textAlign: "center",
                     position: 'absolute',
                     left: '50%',
-                    top: '37%',
+                    top: '40%',
                     transform: 'translate(-50%, -50%)',
                     width: '238px',
                     height: '51px',
@@ -62,7 +56,7 @@ const BasePag = () => {
                     textAlign: "center",
                     position: 'absolute',
                     left: '50%',
-                    top: '47%',
+                    top: '50%',
                     transform: 'translate(-50%, -50%)',
                     width: '238px',
                     height: '51px',
@@ -79,7 +73,7 @@ const BasePag = () => {
                     textAlign: "center",
                     position: 'absolute',
                     left: '50%',
-                    top: '57%',
+                    top: '60%',
                     transform: 'translate(-50%, -50%)',
                     width: '238px',
                     height: '51px',
@@ -96,7 +90,7 @@ const BasePag = () => {
                     textAlign: "center",
                     position: 'absolute',
                     left: '50%',
-                    top: '67%',
+                    top: '70%',
                     transform: 'translate(-50%, -50%)',
                     width: '238px',
                     height: '51px',
