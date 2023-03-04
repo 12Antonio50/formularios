@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/style.css'
-import Boton from './Boton';
+import Boton from './boton';
 import Box from '@mui/material/Box';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';

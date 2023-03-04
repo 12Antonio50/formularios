@@ -2,7 +2,7 @@ import React from "react";
 import '../css/style.css'
 import Box from '@mui/material/Box';
 import { Button } from '@mui/material'
-import Boton from './Boton'
+import Boton from './boton'
 
 const FormulariosF = () => {
     return (

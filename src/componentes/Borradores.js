@@ -3,7 +3,7 @@ import '../css/style.css'
 import logo from '../img/utc.png';
 import Box from '@mui/material/Box';
 import { Button } from '@mui/material'
-import Boton from './Boton'
+import Boton from './boton'
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
