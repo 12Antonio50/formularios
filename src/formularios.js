@@ -84,14 +84,14 @@ function App() {
 
 
       <Routes>
-        <Route path="/BasePag" element={<BasePag />} />
-        <Route path="/FormulariosFi" element={<Formulariosfinalizados />} />
-        <Route path="/VisualizarR" element={<VisualizarRespuestas />} />
-        <Route path="/FormAct" element={<FormularioActivo />} />
-        <Route path="/Eliminar" element={<EliminarFormulario />} />
-        <Route path="/Crear" element={<Crear />} />
-        <Route path="/borrador" element={<Borrador />} />
-        <Route path="/alumno" element={<Alumno />} />
+        <Route exact path="/BasePag" element={<BasePag />} />
+        <Route exact path="/FormulariosFi" element={<Formulariosfinalizados />} />
+        <Route exact path="/VisualizarR" element={<VisualizarRespuestas />} />
+        <Route exact path="/FormAct" element={<FormularioActivo />} />
+        <Route exact path="/Eliminar" element={<EliminarFormulario />} />
+        <Route exact path="/Crear" element={<Crear />} />
+        <Route exact path="/borrador" element={<Borrador />} />
+        <Route exact path="/alumno" element={<Alumno />} />
       </Routes>
 
     </>
