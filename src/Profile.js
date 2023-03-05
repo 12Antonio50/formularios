@@ -13,7 +13,7 @@ import Login from './componentes/Login';
 const Profile = () => (
   <>
     <Routes>
-      <Route exact path="/" >
+      <Route  path="/" >
         <Login />
       </Route>
       <Route exact path="/basepag" >
