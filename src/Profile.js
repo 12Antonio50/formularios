@@ -7,7 +7,7 @@ import FormularioActivo from './componentes/FormActiv';
 import EliminarFormulario from './componentes/EliminarForm';
 import Borrador from './componentes/Borradores';
 import Crear from './componentes/Crear';
-import Alumno from './componentes/Alumno';
+import Alumno from './components/Alumno';
 import Login from './componentes/Login';
 
 const Profile = () => (
