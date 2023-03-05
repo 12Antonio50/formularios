@@ -12,7 +12,7 @@ import './css/style.css';
 import logo from './img/utc.png';
 import { Button } from '@mui/material';
 
-class App extends React.Component {
+class formulario extends React.Component {
   render() {
     const ocultar = () => {
       document.getElementById('opcion1').style.display = 'none';
@@ -83,8 +83,7 @@ class App extends React.Component {
           <div className="magin-donw"></div>
         </div>
 
-        <BrowserRouter>
-            <div className="App">
+
         <Routes>
           <Route exact path="/basepag" element={<BasePag />} />
           <Route exact path="/formulariosfi" element={<Formulariosfinalizados />} />
@@ -95,11 +94,11 @@ class App extends React.Component {
           <Route exact path="/borrador" element={<Borrador />} />
           <Route exact path="/alumno" element={<Alumno />} />
         </Routes>
-        </div>
-        </BrowserRouter>;
+
+ 
 
       </>
     );
   }
 }
-export default App;
+export default formulario;
