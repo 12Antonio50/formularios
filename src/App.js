@@ -1,6 +1,6 @@
 import "./css/style.css";
 import Profile from "./Profile";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 export default function App() {
     const ocultar = () => {
@@ -8,9 +8,9 @@ export default function App() {
     };
     return (
       <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Profile />
-      </BrowserRouter>
+      </HashRouter>
     </div>
     );
   }
