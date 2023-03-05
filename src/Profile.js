@@ -9,9 +9,11 @@ import Borrador from './componentes/Borradores';
 import Crear from './componentes/Crear';
 import Alumno from './componentes/Alumno';
 import Login from './componentes/Login';
-import { HistoryRouter as history } from 'react-router-dom';
+import { unstable_HistoryRouter } from 'react-router-dom';
 
-const Profile = () => (
+export default function Profile ()  {
+  const history = unstable_HistoryRouter()
+  return(
       <>
       <BrowserRouter>
           <div className='App'>  
@@ -30,4 +32,5 @@ const Profile = () => (
         </BrowserRouter>
       </>
 );
-export default Profile;
+}
+
