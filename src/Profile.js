@@ -9,7 +9,7 @@ import Borrador from './componentes/Borradores';
 import Crear from './componentes/Crear';
 import Alumno from './componentes/Alumno';
 import Login from './componentes/Login';
-import { history as history } from 'react-router-dom';
+import { HistoryRouter as history } from 'react-router-dom';
 
 const Profile = () => (
       <>
