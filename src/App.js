@@ -1,14 +1,14 @@
 import "./css/style.css";
 import Profile from "./Profile";
-import { HashRouter} from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 
 export default function App() {
 
     return (
       <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <Profile />
-      </HashRouter>
+      </BrowserRouter>
     </div>
     );
   }
