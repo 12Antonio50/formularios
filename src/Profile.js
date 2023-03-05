@@ -11,36 +11,18 @@ import Alumno from './componentes/Alumno';
 import Login from './componentes/Login';
 
 const Profile = () => (
-  <>
-    <Routes>
-      <Route  path="/" >
-        <Login />
-      </Route>
-      <Route exact path="/basepag" >
-        <BasePag />
-      </Route>
-      <Route exact path="/formulariosfi" >
-        <Formulariosfinalizados />
-      </Route>
-      <Route exact path="/visualizarr" >
-        <VisualizarRespuestas />
-      </Route>
-      <Route exact path="/formact">
-        <FormularioActivo />
-      </Route>
-      <Route exact path="/eliminar" >
-        <EliminarFormulario />
-      </Route>
-      <Route exact path="/crear" >
-        <Crear />
-      </Route>
-      <Route exact path="/borrador">
-        <Borrador />
-      </Route>
-      <Route exact path="/alumno">
-      <Alumno />
-        </Route> 
-    </Routes>
-  </>
+      <>
+        <Routes>
+        <Route path="/" element={<Login/>}/>
+          <Route path="/basepag" element={<BasePag/>}/>
+          <Route path="/formulariosfi" element={<Formulariosfinalizados/>}/>
+          <Route path="/visualizarr" element={<VisualizarRespuestas/>}/>
+          <Route path="/formact" element={<FormularioActivo/>}/>
+          <Route path="/eliminar" element={<EliminarFormulario/>}/>
+          <Route path="/crear" element={<Crear/>}/>
+          <Route path="/borrador" element={<Borrador/>}/>
+          <Route path="/alumno" element={<Alumno/>}/>
+        </Routes>
+      </>
 );
 export default Profile;
