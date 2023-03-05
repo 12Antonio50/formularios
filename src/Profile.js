@@ -12,6 +12,8 @@ import Login from './componentes/Login';
 
 const Profile = () => (
       <>
+      <BrowserRouter>
+          <div className='App'>  
         <Routes>
         <Route path="/" element={<Login/>}/>
           <Route path="/basepag" element={<BasePag/>}/>
@@ -23,6 +25,8 @@ const Profile = () => (
           <Route path="/borrador" element={<Borrador/>}/>
           <Route path="/alumno" element={<Alumno/>}/>
         </Routes>
+        </div>    
+        </BrowserRouter>
       </>
 );
 export default Profile;
