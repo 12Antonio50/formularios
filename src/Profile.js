@@ -13,31 +13,31 @@ import Login from './componentes/Login';
 const Profile = () => (
   <>
     <Routes>
-      <Route path="/" >
+      <Route exact path="/" >
         <Login />
       </Route>
-      <Route path="/basepag" >
+      <Route exact path="/basepag" >
         <BasePag />
       </Route>
-      <Route path="/formulariosfi" >
+      <Route exact path="/formulariosfi" >
         <Formulariosfinalizados />
       </Route>
-      <Route path="/visualizarr" >
+      <Route exact path="/visualizarr" >
         <VisualizarRespuestas />
       </Route>
-      <Route path="/formact">
+      <Route exact path="/formact">
         <FormularioActivo />
       </Route>
-      <Route path="/eliminar" >
+      <Route exact path="/eliminar" >
         <EliminarFormulario />
       </Route>
-      <Route path="/crear" >
+      <Route exact path="/crear" >
         <Crear />
       </Route>
-      <Route path="/borrador">
+      <Route exact path="/borrador">
         <Borrador />
       </Route>
-      <Route path="/alumno">
+      <Route exact path="/alumno">
       <Alumno />
         </Route> 
     </Routes>
