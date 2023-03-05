@@ -12,12 +12,7 @@ import './css/style.css';
 import logo from './img/utc.png';
 import { Button } from '@mui/material';
 
-class formulario extends React.Component {
-  render() {
-    const ocultar = () => {
-      document.getElementById('opcion1').style.display = 'none';
-    };
-    return (
+const Profile = () => (
       <>
         <div className="magin-up" id="opcion1">
           <div className="text-1"
@@ -63,7 +58,7 @@ class formulario extends React.Component {
             </Button>
 
             <Button
-              onClick={ocultar}
+              
               style={{
                 textAlign: "center",
                 position: 'absolute',
@@ -98,7 +93,5 @@ class formulario extends React.Component {
  
 
       </>
-    );
-  }
-}
-export default formulario;
+);
+export default Profile;
