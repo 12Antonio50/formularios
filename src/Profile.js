@@ -8,30 +8,21 @@ import EliminarFormulario from './componentes/EliminarForm';
 import Borrador from './componentes/Borradores';
 import Crear from './componentes/Crear';
 import Alumno from './componentes/Alumno';
-import './css/style.css';
-import logo from './img/utc.png';
-import { Button } from '@mui/material';
 import Login from './componentes/Login';
 
 const Profile = () => (
       <>
-        
-
-
         <Routes>
-        <Route path="/" element={<Login />} />
-          <Route path="/basepag" element={<BasePag />} />
-          <Route path="/formulariosfi" element={<Formulariosfinalizados />} />
-          <Route path="/visualizarr" element={<VisualizarRespuestas />} />
-          <Route path="/formact" element={<FormularioActivo />} />
-          <Route path="/eliminar" element={<EliminarFormulario />} />
-          <Route path="/crear" element={<Crear />} />
-          <Route path="/borrador" element={<Borrador />} />
-          <Route path="/alumno" element={<Alumno />} />
+        <Route path="/" element={<Login/>}/>
+          <Route path="/basepag" element={<BasePag/>}/>
+          <Route path="/formulariosfi" element={<Formulariosfinalizados/>}/>
+          <Route path="/visualizarr" element={<VisualizarRespuestas/>}/>
+          <Route path="/formact" element={<FormularioActivo/>}/>
+          <Route path="/eliminar" element={<EliminarFormulario/>}/>
+          <Route path="/crear" element={<Crear/>}/>
+          <Route path="/borrador" element={<Borrador/>}/>
+          <Route path="/alumno" element={<Alumno/>}/>
         </Routes>
-
- 
-
       </>
 );
 export default Profile;

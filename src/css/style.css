@@ -21,6 +21,10 @@ body {
 
     background: #FD7E14;
 }
+.texto {
+    display: flex;
+    justify-content: center;
+}
 
 
 .box-white {
