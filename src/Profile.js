@@ -16,14 +16,14 @@ const Profile = () => (
           <div className='App'>  
         <Routes>
         <Route path="/" element={<Login/>}/>
-          <Route path="/basepag" element={<BasePag/>}/>
+          <Route path="#/basepag" element={<BasePag/>}/>
           <Route path="/formulariosfi" element={<Formulariosfinalizados/>}/>
           <Route path="/visualizarr" element={<VisualizarRespuestas/>}/>
           <Route path="/formact" element={<FormularioActivo/>}/>
           <Route path="/eliminar" element={<EliminarFormulario/>}/>
           <Route path="/crear" element={<Crear/>}/>
           <Route path="/borrador" element={<Borrador/>}/>
-          <Route path="/alumno" element={<Alumno/>}/>
+          <Route path="#/alumno" element={<Alumno/>}/>
         </Routes>
         </div>    
         </BrowserRouter>
