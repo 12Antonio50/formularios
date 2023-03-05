@@ -9,6 +9,7 @@ import Borrador from './componentes/Borradores';
 import Crear from './componentes/Crear';
 import Alumno from './componentes/Alumno';
 import Login from './componentes/Login';
+import { useHistory as history } from 'react-router-dom';
 
 const Profile = () => (
       <>
@@ -16,14 +17,14 @@ const Profile = () => (
           <div className='App'>  
         <Routes>
         <Route path="/" element={<Login/>}/>
-          <Route path="#/basepag" element={<BasePag/>}/>
+          <Route path={history.push('/basepag')} element={<BasePag/>}/>
           <Route path="/formulariosfi" element={<Formulariosfinalizados/>}/>
           <Route path="/visualizarr" element={<VisualizarRespuestas/>}/>
           <Route path="/formact" element={<FormularioActivo/>}/>
           <Route path="/eliminar" element={<EliminarFormulario/>}/>
           <Route path="/crear" element={<Crear/>}/>
           <Route path="/borrador" element={<Borrador/>}/>
-          <Route path="#/alumno" element={<Alumno/>}/>
+          <Route path={history.push('/alumno')} element={<Alumno/>}/>
         </Routes>
         </div>    
         </BrowserRouter>
