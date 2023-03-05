@@ -8,9 +8,8 @@ import { Button } from '@mui/material'
 
 
 
-class Alumno extends React.Component {
+function Alumno() {
 
-    render() {
         return (
             <>
                 <div className="magin-up">
@@ -145,5 +144,5 @@ class Alumno extends React.Component {
             </>
         );
     }
-}
+
 export default Alumno;
