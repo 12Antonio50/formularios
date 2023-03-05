@@ -14,7 +14,12 @@ import NativeSelect from '@mui/material/NativeSelect';
 export default function Borrador() {
     return (
         <>
-            
+            <div className="magin-up">
+                <div className="box-white">
+                    <img className="logo-utc" src={logo} alt='for sell'></img>
+                </div>
+                <div className="magin-donw"></div>
+            </div>
             <div className="text-1"
                 style={{
                     left: '50%',
