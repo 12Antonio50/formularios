@@ -25,7 +25,6 @@ root.render(
     <App />
     <div className='App'>  
           <Routes>
-          <Route path="/" element={<App/>}/>
             <Route path="/basepag" element={<BasePag/>}/>
             <Route path="/formulariosfi" element={<Formulariosfinalizados/>}/>
             <Route path="/visualizarr" element={<VisualizarRespuestas/>}/>

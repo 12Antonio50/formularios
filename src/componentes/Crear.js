@@ -8,7 +8,6 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import { Button } from '@mui/material'
-import logo from '../img/utc.png';
 
 export default function Crear() {
     const mostrar = () => {
@@ -47,12 +46,7 @@ export default function Crear() {
 
                 }}
             />
-            <div className="magin-up">
-                <div className="box-white">
-                    <img className="logo-utc" src={logo} alt='for sell'></img>
-                </div>
-                <div className="magin-donw"></div>
-            </div>
+            
             <div className="text-1"
                 style={{
                     fontsize: '50px',
