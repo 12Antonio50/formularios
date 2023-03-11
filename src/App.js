@@ -1,46 +1,36 @@
-import React from "react";
-import './css/style.css';
-import logo from './img/utc.png';
-import { Button } from '@mui/material'
+import "./css/style.css";
+
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import BasePag from './componentes/BasePag';
+import Formulariosfinalizados from './componentes/FormulariosF';
+import VisualizarRespuestas from './componentes/VisualizarRes';
+import FormularioActivo from './componentes/FormActiv';
+import EliminarFormulario from './componentes/EliminarForm';
+import Borrador from './componentes/Borradores';
+import Crear from './componentes/Crear';
+import Alumno from './componentes/Alumno';
+import Login from './componentes/Login';
 
 
-function App() {
-    return (
+export default function App() {
 
-        <div className="magin-up">
-            <div className="box-white">
-                <img className="logo-utc" src={logo} alt='for sell'></img>
-            </div>
-            <div className="texto"><h1 className="text-one"> FORMULARIO DE EVALUACIÓN DE LOS DOCENTES</h1></div>
-            <div className="page-two">
-                <div className="box">
-                    <div className="office">
-                        <p>Iniciar sesión con Office 365</p>
-                        <button className="button-365" onClick="login()">Iniciar sesión</button>
-                    </div>
-                    
-                </div>
-                <Button
-                style={{
-                    textAlign: "center",
-                    position: 'absolute',
-                    left: '90%',
-                    top: '8%',
-                    transform: 'translate(-50%, -50%)',
-                    width: '150px',
-                    height: '40px',
-                    backgroundColor: '#0B1A61'
-                }}
-                variant="contained"
-                href="/alumno"
-            >
-                Alumno
-            </Button>
-            </div>
-            <div className="magin-donw"></div>
-        </div>
 
-    );
-}
-
-export default App;
+        return(
+          <>
+            <div className='App'>  
+          <Routes>
+          <Route path="/" element={<Login/>}/>
+            <Route path="/basepag" element={<BasePag/>}/>
+            <Route path="/formulariosfi" element={<Formulariosfinalizados/>}/>
+            <Route path="/visualizarr" element={<VisualizarRespuestas/>}/>
+            <Route path="/formact" element={<FormularioActivo/>}/>
+            <Route path="/eliminar" element={<EliminarFormulario/>}/>
+            <Route path="/crear" element={<Crear/>}/>
+            <Route path="/borrador" element={<Borrador/>}/>
+            <Route path="/alumno" element={<Alumno/>}/>
+          </Routes>
+          </div>    
+        </>
+  );
+  }

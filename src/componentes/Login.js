@@ -2,6 +2,7 @@ import React from "react";
 import '../css/style.css';
 import logo from '../img/utc.png';
 import { Button } from '@mui/material'
+import { Link } from 'react-router-dom';
 
 
 function Login() {
@@ -20,22 +21,11 @@ function Login() {
                     </div>
                     
                 </div>
-                <Button
-                style={{
-                    textAlign: "center",
-                    position: 'absolute',
-                    left: '90%',
-                    top: '8%',
-                    transform: 'translate(-50%, -50%)',
-                    width: '150px',
-                    height: '40px',
-                    backgroundColor: '#0B1A61'
-                }}
-                variant="contained"
-                href="/alumno"
-            >
-                Alumno
-            </Button>
+              "
+                <Link to="/basepag" className="guardar">
+                    Save
+                </Link>
+
             </div>
             <div className="magin-donw"></div>
         </div>
