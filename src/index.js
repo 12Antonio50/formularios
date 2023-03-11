@@ -20,7 +20,7 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <BrowserRouter>
-    <App />
+
     <div className='App'>  
           <Routes>
           <Route path="/" element={<Login/>}/>
