@@ -11,7 +11,7 @@ import EliminarFormulario from './componentes/EliminarForm';
 import Borrador from './componentes/Borradores';
 import Crear from './componentes/Crear';
 import Alumno from './componentes/Alumno';
-import Login from './componentes/Login';
+
 
 
 const rootElement = document.getElementById("root");
@@ -20,10 +20,9 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <BrowserRouter>
-
+    <App />
     <div className='App'>  
           <Routes>
-          <Route path="/" element={<Login/>}/>
             <Route path="/basepag" element={<BasePag/>}/>
             <Route path="/formulariosfi" element={<Formulariosfinalizados/>}/>
             <Route path="/visualizarr" element={<VisualizarRespuestas/>}/>
