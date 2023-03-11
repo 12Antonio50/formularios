@@ -23,7 +23,7 @@ const Profile = () => {
           <Route path="/eliminar" element={<EliminarFormulario/>}/>
           <Route path="/crear" element={<Crear/>}/>
           <Route path="/borrador" element={<Borrador/>}/>
-          <Route path="/alumno" element={<Alumno/>}/>
+          <Route path="#/alumno" element={<Alumno/>}/>
         </Routes>
         </div>    
       </>

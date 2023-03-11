@@ -32,7 +32,7 @@ function Login() {
                     backgroundColor: '#0B1A61'
                 }}
                 variant="contained"
-                href="/alumno"
+                href="/#/alumno"
             >
                 Alumno
             </Button>
