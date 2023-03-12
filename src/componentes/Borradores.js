@@ -7,9 +7,6 @@ import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
 import { Link } from 'react-router-dom';
 
-
-
-
 export default function Borrador() {
     return (
         <>

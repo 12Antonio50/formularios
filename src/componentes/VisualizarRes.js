@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import Boton from './boton'
 import { Link } from 'react-router-dom';
 
-
 const VisualizarRespuestas = () => {
     return (
         <>

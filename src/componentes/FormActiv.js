@@ -3,7 +3,6 @@ import '../css/style.css'
 import Box from '@mui/material/Box';
 import { Link } from 'react-router-dom';
 
-
 const FormularioActivo = () => {
     return (
         <>

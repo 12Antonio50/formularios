@@ -1,12 +1,7 @@
 import React from "react";
 import '../css/style.css'
-
 import Box from '@mui/material/Box';
 import { Button } from '@mui/material'
-
-
-
-
 
 class Alumno extends React.Component {
 
