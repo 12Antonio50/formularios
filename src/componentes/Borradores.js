@@ -1,12 +1,11 @@
 import React from "react";
-import '../css/style.css'
-
+import '../css/style.css';
 import Box from '@mui/material/Box';
-import { Button } from '@mui/material'
-import Boton from './boton'
+import Boton from './boton';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,7 +13,7 @@ import NativeSelect from '@mui/material/NativeSelect';
 export default function Borrador() {
     return (
         <>
-            
+
             <div className="text-1"
                 style={{
                     left: '50%',
@@ -113,7 +112,7 @@ export default function Borrador() {
                 }}
             ></input>
 
-            <Button
+            <Link to="/basepag" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -124,11 +123,9 @@ export default function Borrador() {
                     height: '40px',
                     backgroundColor: '#0B1A61'
                 }}
-                variant="contained"
-                href="/BasePag"
             >
-                inicio
-            </Button>
+                <p>inicio</p>
+            </Link>
 
             <Boton
                 nameClass="respueta1"

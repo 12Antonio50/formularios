@@ -1,7 +1,6 @@
 import React from "react";
 import './css/style.css';
 import logo from './img/utc.png';
-
 import { Link } from 'react-router-dom';
 
 
@@ -11,7 +10,6 @@ function App() {
         <div className="magin-up">
             <div className="box-white">
                 <img className="logo-utc" src={logo} alt='for sell'></img>
-               
             </div>
 
             <div className="page-two">

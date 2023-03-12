@@ -25,9 +25,10 @@ root.render(
     <App />
     <div className='App'>  
           <Routes>
+          <Route path="/" element={<App/>}/>
             <Route path="/basepag" element={<BasePag/>}/>
             <Route path="/formulariosfi" element={<Formulariosfinalizados/>}/>
-            <Route path="/visualizarr" element={<VisualizarRespuestas/>}/>
+            <Route path="/visualizar" element={<VisualizarRespuestas/>}/>
             <Route path="/formact" element={<FormularioActivo/>}/>
             <Route path="/eliminar" element={<EliminarFormulario/>}/>
             <Route path="/crear" element={<Crear/>}/>

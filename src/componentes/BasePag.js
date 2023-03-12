@@ -1,15 +1,13 @@
 import React from "react";
 import '../css/style.css'
-
 import Box from '@mui/material/Box';
-
-import { Button } from '@mui/material'
+import { Link } from 'react-router-dom';
 
 
 const BasePag = () => {
     return (
         <>
-            
+
             <div className="text-1"
                 style={{
                     textAlign: "center",
@@ -35,7 +33,7 @@ const BasePag = () => {
 
             />
 
-            <Button
+            <Link to="/crear" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -46,13 +44,11 @@ const BasePag = () => {
                     height: '51px',
                     backgroundColor: '#FD7E14'
                 }}
-                variant="contained"
-                href="/Crear"
             >
-                Crear formulario
-            </Button>
+                <p>Crear formulario</p>
+            </Link>
 
-            <Button
+            <Link to="/borrador" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -63,13 +59,11 @@ const BasePag = () => {
                     height: '51px',
                     backgroundColor: '#FD7E14'
                 }}
-                variant="contained"
-                href="/borrador"
             >
-                Visualizar borradores
-            </Button>
+                <p>Visualizar borradores</p>
+            </Link>
 
-            <Button
+            <Link to="/formact" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -80,13 +74,11 @@ const BasePag = () => {
                     height: '51px',
                     backgroundColor: '#FD7E14'
                 }}
-                variant="contained"
-                href="/FormAct"
             >
-                Formularios activos
-            </Button>
+                <p>Formularios activos</p>
+            </Link>
 
-            <Button
+            <Link to="/formulariosfi" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -97,11 +89,9 @@ const BasePag = () => {
                     height: '51px',
                     backgroundColor: '#FD7E14'
                 }}
-                variant="contained"
-                href="/FormulariosFi"
             >
-                Formulario finalizados
-            </Button>
+                <p>Formularios finalizados</p>
+            </Link>
 
 
         </>

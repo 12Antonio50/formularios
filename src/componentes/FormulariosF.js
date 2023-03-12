@@ -1,9 +1,8 @@
 import React from "react";
 import '../css/style.css'
 import Box from '@mui/material/Box';
-import { Button } from '@mui/material'
 import Boton from './boton'
-
+import { Link } from 'react-router-dom';
 
 const FormulariosF = () => {
     return (
@@ -75,7 +74,7 @@ const FormulariosF = () => {
                     backgroundColor: '#FFFF'
                 }}
             ></input>
-            <Button
+           <Link to="/basepag" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -86,13 +85,11 @@ const FormulariosF = () => {
                     height: '40px',
                     backgroundColor: '#0B1A61'
                 }}
-                variant="contained"
-                href="/BasePag"
             >
-                Regresar
-            </Button>
+                <p>inicio</p>
+            </Link>
 
-            <Button
+            <Link to="/visualizar" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -103,13 +100,9 @@ const FormulariosF = () => {
                     height: '40px',
                     backgroundColor: '#FD7E14'
                 }}
-                variant="contained"
-                href="/VisualizarR"
             >
-                Visualizar
-            </Button>
-
-
+              <p>Visualizar</p>
+            </Link>
             <Boton
                 nameClass="volverp"
                 text="VOLVER A PUBLICAR Y COMPARTIR"

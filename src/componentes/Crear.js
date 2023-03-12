@@ -7,7 +7,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
-import { Button } from '@mui/material'
+import { Link } from 'react-router-dom';
 
 export default function Crear() {
     const mostrar = () => {
@@ -56,7 +56,7 @@ export default function Crear() {
 
 
             </div>
-            <Button
+            <Link to="/basepag" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -67,11 +67,9 @@ export default function Crear() {
                     height: '40px',
                     backgroundColor: '#0B1A61'
                 }}
-                variant="contained"
-                href="/BasePag"
             >
-                Regresar
-            </Button>
+                <p>inicio</p>
+            </Link>
             <Boton
                 onClick={mostrar}
                 nameClass="crear"

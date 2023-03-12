@@ -1,8 +1,8 @@
 import React from "react";
 import '../css/style.css'
 import Box from '@mui/material/Box';
-import { Button } from '@mui/material'
 import Boton from './boton'
+import { Link } from 'react-router-dom';
 
 
 const VisualizarRespuestas = () => {
@@ -75,7 +75,7 @@ const VisualizarRespuestas = () => {
                 }}
             ></input>
 
-            <Button
+            <Link to="/basepag" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -86,45 +86,39 @@ const VisualizarRespuestas = () => {
                     height: '40px',
                     backgroundColor: '#0B1A61'
                 }}
-                variant="contained"
-                href="/BasePag"
             >
-                inicio
-            </Button>
+                <p>inicio</p>
+            </Link>
 
-            <Button
+            <Link to="/formulariosfi" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
                     left: '10%',
                     top: '90%',
                     transform: 'translate(-50%, -50%)',
-                    width: '150px',
-                    height: '40px',
+                    width: '238px',
+                    height: '51px',
                     backgroundColor: '#FD7E14'
                 }}
-                variant="contained"
-                href="/FormulariosFi"
             >
-                Formularios finalizados
-            </Button>
+                <p>Formularios finalizados</p>
+            </Link>
 
-            <Button
+            <Link to="/formact" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
                     left: '90%',
                     top: '90%',
                     transform: 'translate(-50%, -50%)',
-                    width: '150px',
-                    height: '40px',
+                    width: '238px',
+                    height: '51px',
                     backgroundColor: '#FD7E14'
                 }}
-                variant="contained"
-                href="/FormAct"
             >
-                Formularios activos
-            </Button>
+                <p>Formularios activos</p>
+            </Link>
 
             <Boton
                 nameClass="respueta1"

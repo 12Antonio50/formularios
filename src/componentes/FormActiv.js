@@ -1,14 +1,13 @@
 import React from "react";
 import '../css/style.css'
 import Box from '@mui/material/Box';
-import { Button } from '@mui/material'
-
+import { Link } from 'react-router-dom';
 
 
 const FormularioActivo = () => {
     return (
         <>
-    
+
             <div className="text-1"
                 style={{
                     left: '50%',
@@ -38,7 +37,7 @@ const FormularioActivo = () => {
 
             />
 
-            <Button
+            <Link to="/basepag" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -49,13 +48,11 @@ const FormularioActivo = () => {
                     height: '40px',
                     backgroundColor: '#0B1A61'
                 }}
-                variant="contained"
-                href="/BasePag"
             >
-                inicio
-            </Button>
+                <p>inicio</p>
+            </Link>
 
-            <Button
+            <Link to="/visualizar" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -66,13 +63,11 @@ const FormularioActivo = () => {
                     height: '40px',
                     backgroundColor: '#FD7E14'
                 }}
-                variant="contained"
-                href="/VisualizarR"
             >
-                Respuestas de formularios
-            </Button>
+                <p>Visualizar respuestas</p>
+            </Link>
 
-            <Button
+            <Link to="/eliminar" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -83,12 +78,10 @@ const FormularioActivo = () => {
                     height: '40px',
                     backgroundColor: '#FD7E14'
                 }}
-                variant="contained"
-                href="/Eliminar"
-            >
-                Borrar formularios bublicados
-            </Button>
 
+            >
+                <p>Eliminar formularios publicados</p>
+            </Link>
         </>
     );
 }

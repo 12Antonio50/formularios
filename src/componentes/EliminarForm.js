@@ -2,14 +2,14 @@ import React from "react";
 import '../css/style.css'
 import Box from '@mui/material/Box';
 import { Button } from '@mui/material'
-
+import { Link } from 'react-router-dom';
 
 
 
 const EliminarFormulario = () => {
     return (
         <>
-        
+
             <div className="text-1"
                 style={{
                     left: '50%',
@@ -39,7 +39,7 @@ const EliminarFormulario = () => {
 
             />
 
-            <Button
+            <Link to="/formact" className="crear-boton"
                 style={{
                     textAlign: "center",
                     position: 'absolute',
@@ -50,11 +50,9 @@ const EliminarFormulario = () => {
                     height: '40px',
                     backgroundColor: '#0B1A61'
                 }}
-                variant="contained"
-                href="/FormAct"
             >
-                Regresar
-            </Button>
+                <p>inicio</p>
+            </Link>
 
             <Button
                 style={{
