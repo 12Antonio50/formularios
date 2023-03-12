@@ -17,7 +17,20 @@ const BasePag = () => {
                 Jefe de carrera
             </div>
 
-
+            <Link to="/" className="crear-boton"
+                style={{
+                    textAlign: "center",
+                    position: 'absolute',
+                    left: '90%',
+                    top: '8%',
+                    transform: 'translate(-50%, -50%)',
+                    width: '160px',
+                    height: '40px',
+                    backgroundColor: '#0B1A61'
+                }}
+            >
+                <p>Cerrar sesión</p>
+            </Link>
             <Box
                 sx={{
                     textAlign: "center",
